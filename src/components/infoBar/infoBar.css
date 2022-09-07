@@ -1,0 +1,52 @@
+.infoBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.infoBarWraper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.authorSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px dashed gainsboro;
+}
+
+.infoBarTitle{
+    width: 100%;
+    border-bottom: 1px solid #FF4141;
+    margin: 2% 0%;
+    padding: 1% 0%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FF4141;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.infoBarAuthor{
+    width: 100%;
+    margin: 1% 0%;
+    display: flex;
+    
+}
+
+.infoBarAuthorElement{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: black;
+    margin: 0% 2%;
+}
+
+.infoBarAuthorRes{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #4D4F5C;
+    margin: 0% 2%;
+}

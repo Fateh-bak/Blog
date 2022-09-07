@@ -1,0 +1,24 @@
+
+.mainSection{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8F8;
+
+}
+
+.leftSection{
+    margin: 0 1%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+}
+.rightSection{
+    margin: 1% 0;
+    width: 35%;
+}
