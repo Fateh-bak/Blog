@@ -9,7 +9,6 @@ function OverView() {
   return (
     <div className="overView">
       <div className="overViewWraper">
-        <img src="./assets/images/overView.png" alt="" className="overViewBackGroundImg" />
         <div className="overViewDesc">
           <span className="overViewTitle">Hi-Tech</span>
           <span className="overViewDescTxt">
