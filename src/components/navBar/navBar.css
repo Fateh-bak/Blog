@@ -51,7 +51,17 @@ justify-content: center;
     font-weight: 500;
     cursor: pointer;
 }
-.navBarOptionsListElement:hover{
+.navlink{
+    text-decoration: none;
+    margin: 0;
+    padding:15px 0;
+    color: #919192;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navlink:hover{
     color: #FF4141 ;
 }
 .selected{

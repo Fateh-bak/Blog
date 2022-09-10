@@ -7,10 +7,10 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 // import { Container } from './styles';
 
 function Post({imgUrl}) {
-  console.log(imgUrl.typdd)
+  console.log(imgUrl.type)
   return <div className="postSection">
       <div className="postSectionWraper">
-          <img src={imgUrl.url} alt="notfound" className="postImg" />
+          <img src={imgUrl} alt="notfound" className="postImg" />
           <div className="postDesc">
           <span className="postTitle">Hi-Tech</span>
           <span className="postDescTxt">

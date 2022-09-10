@@ -9,9 +9,10 @@
 .overViewWraper{
     min-height: 500px;
     width: 100%;
-    background-image: url("../../../public/assets/images/overView.png")  ;
+    background-image: url("../../../public/assets/images/A-look-back-at-August--Blog-.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 
