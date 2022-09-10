@@ -6,7 +6,7 @@ const api = axios.create({
 
 async function getPosts(){
     const res = await api.get('/')
-    const data = JSON.parse(res.data)
+    const data = res.data
     return data
 }
 

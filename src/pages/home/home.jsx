@@ -12,23 +12,20 @@ function Home() {
   const [posts,setPosts] = useState([])
   console.log(posts)
   useEffect(() => {
-    return async () => {
-    const res = await getPosts()
-    console.log(res)
-    setPosts(res)    };
+  getPosts().then((data)=>{setPosts(data)})
   },[]);
   console.log(posts)
   
+  if(posts){ return <>
+    <NavBar/>
+    <OverView/>
+    <div className="mainSection">
+      <div className='leftSection'>{blogUrl.map((url)=>{return <Post imgUrl={url.url}/>})}</div>
+      <div className="rightSection"><InfoBar/></div>
   
-  return <>
-  <NavBar/>
-  <OverView/>
-  <div className="mainSection">
-    <div className='leftSection'>{blogUrl.map((url)=>{return <Post imgUrl={url.url}/>})}</div>
-    <div className="rightSection"><InfoBar/></div>
-
-  </div>
-  </>;
+    </div>
+    </>;}else{console.log("waiting for data")}
+ 
 }
 
 export default Home;
