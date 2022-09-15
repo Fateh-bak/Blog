@@ -2,16 +2,16 @@ import React from 'react';
 import './navBar.css'
 import SearchIcon from '@mui/icons-material/Search';
 
-function NavBar() {
+function NavBar({page}) {
   return (<div className="navBar">
       <div className="navBarWraper">
           <div className="navBarLogo"><span className="navBarLogoSpan">Blog</span></div>
           <div className="navBarOptions">
           <ul className="navBarOptionsList">
-              <li className="navBarOptionsListElement "><a href="/" className="navlink">Home</a></li>
-              <li className="navBarOptionsListElement selected"><a href="/" className="navlink">Articles</a></li>
-              <li className="navBarOptionsListElement"><a href="/" className="navlink">Headlines</a></li>
-              <li className="navBarOptionsListElement"><a href="/" className="navlink">About Us</a></li>
+              <li className={"navBarOptionsListElement "+(page==="home"?"selected":"")}><a href="/" className="navlink">Home</a></li>
+              <li className={"navBarOptionsListElement "+(page==="articles"?"selected":"")}><a href="/" className="navlink">Articles</a></li>
+              <li className={"navBarOptionsListElement "+(page==="headlines"?"selected":"")}><a href="/" className="navlink">Headlines</a></li>
+              <li className={"navBarOptionsListElement "+(page==="aboutus"?"selected":"")}><a href="/" className="navlink">About Us</a></li>
           </ul>
       </div>
       <div className="navBarFunc">

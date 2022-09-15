@@ -5,7 +5,7 @@ import OverView from '../../components/overView/overView';
 import Post from '../../components/post/post';
 import "./home.css"
 import {blogUrl} from"../../dummydb.js"
-import { getPosts } from '../../api/api';
+import { getPosts,sendData } from '../../api/api';
 // import { Container } from './styles';
 
 function Home() {
@@ -15,13 +15,13 @@ function Home() {
   getPosts().then((data)=>{setPosts(data)})
   },[]);
   console.log(posts)
-  
+  sendData()
   if(posts){ return <>
-    <NavBar/>
+    <NavBar page={"home"}/>
     <OverView/>
     <div className="mainSection">
       <div className='leftSection'>{blogUrl.map((url)=>{return <Post imgUrl={url.url}/>})}</div>
-      <div className="rightSection"><InfoBar/></div>
+      <div className="rightSection"><InfoBar /></div>
   
     </div>
     </>;}else{console.log("waiting for data")}

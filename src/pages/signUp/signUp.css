@@ -72,6 +72,7 @@ background-color: #f2f5f2;
 }
 
 .signupButton{
+    cursor: pointer;
     background-color: #FF4141;
     color: white;
     font-size: 20px;
@@ -83,6 +84,8 @@ background-color: #f2f5f2;
     border:none;
 }
 .loginButton{
+    text-decoration: none;
+    cursor: pointer;
     background-color: #FF4141;
     color: white;
     font-size: 20px;
