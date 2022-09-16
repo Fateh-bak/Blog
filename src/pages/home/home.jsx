@@ -5,7 +5,7 @@ import OverView from '../../components/overView/overView';
 import Post from '../../components/post/post';
 import "./home.css"
 import {blogUrl} from"../../dummydb.js"
-import { getPosts,sendData } from '../../api/api';
+import { getPosts, sendCredentials, } from '../../api/api';
 // import { Container } from './styles';
 
 function Home() {
@@ -15,7 +15,6 @@ function Home() {
   getPosts().then((data)=>{setPosts(data)})
   },[]);
   console.log(posts)
-  sendData()
   if(posts){ return <>
     <NavBar page={"home"}/>
     <OverView/>

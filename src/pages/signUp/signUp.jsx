@@ -1,7 +1,7 @@
 import "./signUp.css";
 import React, { useState } from "react";
 import  { Navigate } from 'react-router-dom'
-import register from "../../api/api"
+import register, { sendCredentials } from "../../api/api"
 // import { Container } from './styles';
 
 function SignUp() {
@@ -22,7 +22,7 @@ function handelPassword(e){
   //handel register
   async function handelRegister(name,email,password){
       console.log(name,email,password)
-      const status = await register(name,email,password)
+      const status = await sendCredentials(name,email,password)
       setRegistred(status)
   }
 
